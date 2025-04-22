@@ -1,0 +1,65 @@
+mixin header()
+    header.header
+        .header__top
+            .header__wrap
+                .header__nav
+                    ul.header__nav-list
+                        li.header__nav-item: a.header__nav-link(href='#') Гарантия свежести
+                        li.header__nav-item: a.header__nav-link(href='#') Доставка и оплата
+                        li.header__nav-item: a.header__nav-link(href='#') Оптовые поставки
+                        li.header__nav-item: a.header__nav-link(href='#') Контакты
+                .header__location
+                    span.header__city Санкт-Петербург
+                    ul.header__city-list
+                        li.header__city-item: a(href='#') Москва
+                        li.header__city-item: a(href='#') Екатеринбург
+                        li.header__city-item: a(href='#') Челябинск
+                        li.header__city-item: a(href='#') Уфа
+                .header__contacts
+                    a.header__phone(href='tel:+78123098288') 8 812 309-82-88
+                    a.header__cart(href='#')
+                        .header__cart-counter 4
+                        | В корзине (4 товара)
+                .header__socials
+                    a.header__social-icon.header__social-icon--tg(href='#')
+                        img(src="./assets/images/tg.svg")
+                    a.header__social-icon.header__social-icon--vk(href='#')
+                        img(src="./assets/images/vk.svg")
+                    a.header__social-icon.header__social-icon--ok(href='#')
+                        img(src="./assets/images/ok.svg")
+
+        .header__main
+            .header__main-container
+                .header__menu.header__menu--left
+                    a.header__menu-item(href='#') 
+                        | СЛАДКИЕ ДНИ 
+                        span.header__percent %
+                    .header__menu-item.header__menu-item--dropdown
+                        span.header__select ПОДАРОЧНЫЕ НАБОРЫ
+                        ul.header__submenu
+                            li.header__submenu-item: a(href='#') Пирожные макарон
+                            li.header__submenu-item: a(href='#') Эклеры
+                            li.header__submenu-item: a(href='#') Вафельные трубочки
+                            li.header__submenu-item: a(href='#') Профили
+                    a.header__menu-item(href='#') СОБРАТЬ НАБОР
+
+                .header__logo
+                    img.header__logo-image(src='assets/images/logo-desctop.png', alt='Macaron Shop')
+
+                .header__menu.header__menu--right
+                    a.header__menu-item(href='#') СОЗДАТЬ ДИЗАЙН
+                    .header__menu-item.header__menu-item--dropdown
+                        span.header__select КОМПАНИЯМ
+                        ul.header__submenu
+                            li.header__submenu-item: a(href='#') Пирожные макарон
+                            li.header__submenu-item: a(href='#') Эклеры
+                            li.header__submenu-item: a(href='#') Вафельные трубочки
+                            li.header__submenu-item: a(href='#') Профили
+                    .header__menu-item.header__menu-item--dropdown
+                        span.header__select ВЕСЬ КАТАЛОГ
+                        ul.header__submenu
+                            li.header__submenu-item: a(href='#') Пирожные макарон
+                            li.header__submenu-item: a(href='#') Эклеры
+                            li.header__submenu-item: a(href='#') Вафельные трубочки
+                            li.header__submenu-item: a(href='#') Профили
+
