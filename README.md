@@ -1,4 +1,4 @@
-# _tempalte-pug_
+# _Macaron Shop_
 
 ## Настройка проекта:
 
