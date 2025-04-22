@@ -1,11 +1,10 @@
-console.log('hi');
-// Скрипт для добавления класса "active" при клике на пункт меню
-document.addEventListener('DOMContentLoaded', () => {
-  const menuItems = document.querySelectorAll('.menu-item');
+import { burgerMenu } from "./templates/burgerMenu.js";
+import { mobileMenu } from "./templates/mobileMenu.js";
 
-  menuItems.forEach((menuItem) => {
-    menuItem.addEventListener('click', () => {
-      menuItem.classList.toggle('active');
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  burgerMenu("burgerMenu", "navMenu");
+  mobileMenu(".js-submenu .menu__select");
+  document.querySelector(".menu__close").addEventListener("click", () => {
+    document.querySelector("#navMenu").classList.remove("open");
   });
 });

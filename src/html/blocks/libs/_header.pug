@@ -2,7 +2,7 @@ mixin header()
     header.header
         .header__top
             .header__wrap
-                button.header__burger
+                button#burgerMenu.header__burger
                     .header__burger-line
                     .header__burger-line
                     .header__burger-line
@@ -69,4 +69,50 @@ mixin header()
                             li.header__submenu-item: a(href='#') Эклеры
                             li.header__submenu-item: a(href='#') Вафельные трубочки
                             li.header__submenu-item: a(href='#') Профили
+        //- Мобильное меню
+        #navMenu.menu.menu--mobile
+            //- .menu__overlay
+            button.menu__close
+            .menu__container
+                .menu__location.js-submenu
+                    span.menu__select Санкт-Петербург
+                    ul.menu__submenu.menu__city-list
+                        li.menu__submenu-item.menu__city-item: a(href='#') Москва
+                        li.menu__submenu-item.menu__city-item: a(href='#') Екатеринбург
+                        li.menu__submenu-item.menu__city-item: a(href='#') Челябинск
+                        li.menu__submenu-item.menu__city-item: a(href='#') Уфа
+                ul.menu__list
+                    li.menu__item: a.menu__link(href="#") СЛАДКИЕ ДНИ
+                        span.menu__discount %
+                    li.menu__item.menu__item--dropdown.js-submenu
+                        span.menu__select ПОДАРОЧНЫЕ НАБОРЫ
+                        ul.menu__submenu
+                            li.menu__submenu-item: a(href="#") Гарантия свежести
+                            li.menu__submenu-item: a(href="#") Доставка и оплата
+                            li.menu__submenu-item: a(href="#") Оптовые поставки
+                            li.menu__submenu-item: a(href="#") Контакты
+                    li.menu__item: a.menu__link(href="#") СОБРАТЬ НАБОР
+                    li.menu__item: a.menu__link(href="#") СОЗДАТЬ ДИЗАЙН
+                    li.menu__item.menu__item--dropdown.js-submenu
+                        span.menu__select КОМПАНИЯМ
+                        ul.menu__submenu
+                            li.menu__submenu-item: a(href="#") Гарантия свежести
+                            li.menu__submenu-item: a(href="#") Доставка и оплата
+                            li.menu__submenu-item: a(href="#") Оптовые поставки
+                            li.menu__submenu-item: a(href="#") Контакты
+                    li.menu__item.menu__item--dropdown.js-submenu
+                        span.menu__select ВЕСЬ КАТАЛОГ
+                        ul.menu__submenu
+                            li.menu__submenu-item: a(href="#") Гарантия свежести
+                            li.menu__submenu-item: a(href="#") Доставка и оплата
+                            li.menu__submenu-item: a(href="#") Оптовые поставки
+                            li.menu__submenu-item: a(href="#") Контакты
+                a(href="tel:88123098288").menu__phone 8 812 309-82-88
+                .menu__socials
+                    a.menu__social(href="#"): i.icon.icon--tg
+                        img(src="./assets/images/tg.svg")
+                    a.menu__social(href="#"): i.icon.icon--vk
+                        img(src="./assets/images/vk.svg")
+                    a.menu__social(href="#"): i.icon.icon--ok
+                        img(src="./assets/images/ok.svg")
 
